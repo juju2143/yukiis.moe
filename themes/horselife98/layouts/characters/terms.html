@@ -1,0 +1,19 @@
+{{ define "main" }}
+    <article>
+        <h2>{{ .Title }}</h2>
+        <p>{{ .Content }}</p>
+    </article>
+    {{- partial "ad.html" . -}}
+    {{ range .Pages.ByWeight }}
+        {{ if not .Params.IsPage }}
+            <article>
+                {{ with .Params.coverImage }}
+                <img src="{{ . }}" style="float: left; width: 128px; margin: 8px;" />
+                {{ end }}
+                <h2>{{ .Title }}</h2>
+                <p>{{ .Content }}</p>
+                <p><a href="{{ .RelPermalink }}">{{ i18n "allcomics" }} {{ .Title }}</a></p>
+            </article>
+        {{ end }}
+    {{ end }}
+{{ end }}

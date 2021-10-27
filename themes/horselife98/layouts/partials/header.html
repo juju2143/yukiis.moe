@@ -1,0 +1,22 @@
+<div id="head">
+    <h1>馬の生活98</h1>
+    <h2>{{ .Site.Title }}</h2>
+    <!--h2>ホースライフ98 a comic by j.p. savard</h2-->
+</div>
+<nav id="mainnav">
+    <a href="{{ relLangURL "/" }}">{{ i18n "home" }}</a>
+    <a href="{{ relLangURL "/about/" }}">{{ i18n "about" }}</a>
+    <a href="{{ relLangURL "/characters/" }}">{{ i18n "characters" }}</a>
+    <a href="{{ relLangURL "/comic/" }}">{{ i18n "comics" }}</a>
+    <a href="{{ relLangURL "/blog/" }}">{{ i18n "news" }}</a>
+    <a href="{{ relLangURL "/bonus/" }}">{{ i18n "bonus" }}</a>
+    {{ range .Site.Languages }}
+        {{ if ne .Lang site.Language.Lang }}
+        {{ if eq .Lang "en" }}
+            <a href="{{ relURL "/" }}">{{ .LanguageName }}</a>
+        {{ else }}
+            <a href="{{ relLangURL .Lang }}">{{ .LanguageName }}</a>
+        {{ end }}
+        {{ end }}
+    {{ end }}
+</nav>

@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article>
+    <section class="blogmeta">
+        <h2>{{ .Title }}</h2>
+    </section>
+    <section class="comicbody">
+        {{ .Content }}
+    </section>
+</article>
+{{- partial "ad.html" . -}}
+{{ end }}

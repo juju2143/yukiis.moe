@@ -1,0 +1,29 @@
+[home]
+  other = "home"
+[about]
+  other = "about"
+[comics]
+  other = "comics"
+[news]
+  other = "news"
+[bonus]
+  other = "bonus"
+
+[translations]
+  one = "Translation"
+  other = "Translations"
+[season]
+  one = "Season"
+  other = "Seasons"
+[characters]
+  one = "Character"
+  other = "Characters"
+[locations]
+  one = "Location"
+  other = "Locations"
+[tags]
+  one = "Tag"
+  other = "Tags"
+
+[allcomics]
+  other = "See all comics featuring"

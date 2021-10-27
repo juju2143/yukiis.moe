@@ -1,0 +1,20 @@
+{{ define "comic" }}
+<article class="comicarticle">
+    <section class="comic">
+        {{ .Content }}
+    </section>
+</article>
+{{- partial "nav.html" . -}}
+{{- partial "nav.html" .Parent -}}
+{{ end }}
+{{ define "main" }}
+{{ with .Parent }}
+<article>
+    {{- partial "meta.html" . -}}
+    <section class="body">
+        {{ .Content }}
+    </section>
+</article>
+{{ end }}
+{{- partial "ad.html" . -}}
+{{ end }}

@@ -1,0 +1,26 @@
+#hlcomic
+{
+    width: 600px;
+    font-family: 'AnimeAce3BB';
+    font-size: 11pt;
+    text-align: left;
+    line-height: 1.2;
+    background: white;
+    color: black;
+    padding: 8px;
+}
+canvas
+{
+    border: black 6px solid;
+    width: 600px;
+    height: 400px;
+    box-sizing: border-box;
+}
+.hltitle
+{
+    font-size: 1.5em;
+}
+.hlurl
+{
+    float: right;
+}

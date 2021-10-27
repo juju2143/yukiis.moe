@@ -1,0 +1,43 @@
+{{ define "comic" }}
+    {{ range first 1 (union (where .Site.RegularPages "Section" "comic") (where (where (where .Site.Pages "Section" "comic") "Type" "subpage") "Kind" "section")).ByDate.Reverse }}
+        {{ if .IsPage }}
+            <article class="comicarticle">
+                <section class="comic">
+                    {{ with .Params.Image }}<img src="{{ . }}" />{{ end }}
+                </section>
+            </article>
+            {{- partial "nav.html" . -}}
+        {{ else }}
+            {{ range last 1 .Pages }}
+                <article class="comicarticle">
+                    <section class="comic">
+                        {{ .Content }}
+                    </section>
+                </article>
+                {{- partial "nav.html" . -}}
+                {{- partial "nav.html" .Parent -}}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+{{ define "main" }}
+    {{ range first 1 (union (where .Site.RegularPages "Section" "comic") (where (where (where .Site.Pages "Section" "comic") "Type" "subpage") "Kind" "section")).ByDate.Reverse }}
+        <article>
+            {{- partial "meta.html" . -}}
+            <section class="body">
+                {{ .Content }}
+            </section>
+        </article>
+    {{ end }}
+    {{- partial "ad.html" . -}}
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "blog") }}
+    {{ range $paginator.Pages }}
+        <article class="blogarticle">
+            {{- partial "meta.html" . -}}
+            <section class="body">
+                {{ .Content }}
+            </section>
+        </article>
+    {{ end }}
+    {{ template "_internal/pagination.html" . }}
+{{ end }}

@@ -1,0 +1,20 @@
+{{ define "comic" }}
+{{ range last 1 .Pages }}
+<article class="comicarticle">
+    <section class="comic">
+        {{ .Content }}
+    </section>
+</article>
+{{- partial "nav.html" . -}}
+{{- partial "nav.html" .Parent -}}
+{{ end }}
+{{ end }}
+{{ define "main" }}
+<article>
+    {{- partial "meta.html" . -}}
+    <section class="body">
+        {{ .Content }}
+    </section>
+</article>
+{{- partial "ad.html" . -}}
+{{ end }}

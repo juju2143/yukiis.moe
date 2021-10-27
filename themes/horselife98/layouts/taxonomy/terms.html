@@ -1,0 +1,14 @@
+{{ define "main" }}
+    <article>
+        <h2>{{ .Title }}</h2>
+        {{ .Content }}
+    </article>
+    {{- partial "ad.html" . -}}
+    {{ range .Pages.ByTitle }}
+        {{ if not .Params.IsPage }}
+            <article class="listitem" style="background-image: url('{{ .Params.coverImage }}')">
+                <a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </article>
+        {{ end }}
+    {{ end }}
+{{ end }}

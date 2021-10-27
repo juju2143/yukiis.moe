@@ -1,0 +1,28 @@
+[home]
+  other = "accueil"
+[about]
+  other = "à propos"
+[comics]
+  other = "comics"
+[news]
+  other = "nouvelles"
+[bonus]
+  other = "bonus"
+
+[translations]
+  other = "Traductions"
+[season]
+  one = "Saison"
+  other = "Saisons"
+[characters]
+  one = "Personnage"
+  other = "Personnages"
+[locations]
+  one = "Lieu"
+  other = "Lieux"
+[tags]
+  one = "Tag"
+  other = "Tags"
+
+[allcomics]
+  other = "Voir tous les comics mettant en vedette"

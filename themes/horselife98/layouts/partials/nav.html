@@ -1,0 +1,12 @@
+{{ if gt (len .Parent.Pages) 1 }}
+<nav class="comicnav">
+    {{ $p := . }}
+    {{ with .Parent.Pages }}
+        <a class="first" title="First page"{{ with index .Reverse 0 }}{{ if ne .RelPermalink $p.RelPermalink }} href="{{ .RelPermalink }}"{{ end }}{{ end }}>&lt;==</a>
+        <a class="prev" title="Previous page"{{ with .Prev $p }} href="{{ .RelPermalink }}"{{ end }}>&lt;=</a>
+        <a class="permalink" title="This page"{{ with $p }} href="{{ .RelPermalink }}"{{ end }}>{{ $p.Params.Slug }}</a>
+        <a class="next" title="Next page"{{ with .Next $p }} href="{{ .RelPermalink }}"{{ end }}>=&gt;</a>
+        <a class="last" title="Latest page"{{ with index . 0 }}{{ if ne .RelPermalink $p.RelPermalink }} href="{{ .RelPermalink }}"{{ end }}{{ end }}>==></a>
+    {{ end }}
+</nav>
+{{ end }}

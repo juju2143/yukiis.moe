@@ -1,0 +1,17 @@
+{{ define "comic" }}
+<article class="comicarticle">
+    <section class="comic">
+        {{ with .Params.Image }}<img src="{{ . }}" />{{ end }}
+    </section>
+</article>
+{{- partial "nav.html" . -}}
+{{ end }}
+{{ define "main" }}
+<article>
+    {{- partial "meta.html" . -}}
+    <section class="body">
+        {{ .Content }}
+    </section>
+</article>
+{{- partial "ad.html" . -}}
+{{ end }}

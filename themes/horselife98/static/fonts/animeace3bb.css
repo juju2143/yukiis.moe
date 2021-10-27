@@ -1,0 +1,52 @@
+
+/* Webfont: AnimeAce3BB-Bold */
+@font-face {
+    font-family: 'AnimeAce3BB';
+    src: url('AnimeAce3BB-Bold.eot'); /* IE9 Compat Modes */
+    src: url('AnimeAce3BB-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('AnimeAce3BB-Bold.woff') format('woff'), /* Modern Browsers */
+         url('AnimeAce3BB-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('AnimeAce3BB-Bold.svg#AnimeAce3BB-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: AnimeAce3BB-BoldItalic */
+@font-face {
+    font-family: 'AnimeAce3BB';
+    src: url('AnimeAce3BB-BoldItalic.eot'); /* IE9 Compat Modes */
+    src: url('AnimeAce3BB-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('AnimeAce3BB-BoldItalic.woff') format('woff'), /* Modern Browsers */
+         url('AnimeAce3BB-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('AnimeAce3BB-BoldItalic.svg#AnimeAce3BB-BoldItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: AnimeAce3BB-Italic */
+@font-face {
+    font-family: 'AnimeAce3BB';
+    src: url('AnimeAce3BB-Italic.eot'); /* IE9 Compat Modes */
+    src: url('AnimeAce3BB-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('AnimeAce3BB-Italic.woff') format('woff'), /* Modern Browsers */
+         url('AnimeAce3BB-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('AnimeAce3BB-Italic.svg#AnimeAce3BB-Italic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: AnimeAce3BB-Regular */
+@font-face {
+    font-family: 'AnimeAce3BB';
+    src: url('AnimeAce3BB-Regular.eot'); /* IE9 Compat Modes */
+    src: url('AnimeAce3BB-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('AnimeAce3BB-Regular.woff') format('woff'), /* Modern Browsers */
+         url('AnimeAce3BB-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('AnimeAce3BB-Regular.svg#AnimeAce3BB-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}

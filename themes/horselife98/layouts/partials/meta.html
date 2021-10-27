@@ -1,0 +1,25 @@
+<section class="meta">
+    <ul>
+        <li><date>{{ .Date.Local.Format "02 Jan 2006" }}</date></li>
+        {{ if .IsTranslated }}
+        <li>{{ i18n "translations" }}:
+        {{ range .Translations }}
+            <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
+        {{ end }}
+        </li>
+        {{ end }}
+        {{ with .Params.Seasons }}
+        <li>{{ i18n "season" 1 }}: <a href="{{ relLangURL "seasons/" }}{{ . | urlize }}/">{{ . }}</a></li>
+        {{ end }}
+        {{ with .Params.Characters }}
+        <li>{{ i18n "characters" }}: {{ delimit . ", " }}</li>
+        {{ end }}
+        {{ with .Params.Locations }}
+        <li>{{ i18n "locations" }}: {{ delimit . ", " }}</li>
+        {{ end }}
+        {{ with .Params.Tags }}
+        <li>{{ i18n "tags" }}: {{ delimit . ", " }}</li>
+        {{ end }}
+    </ul>
+    <h2><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+</section>

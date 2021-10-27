@@ -1,0 +1,33 @@
+baseURL = 'https://yukiis.moe/'
+languageCode = 'en'
+title = 'horse life 98'
+copyright = 'Horse Life 98 © 2019-2021 J. P. Savard'
+theme = 'horselife98'
+paginate = 10
+
+[languages]
+  [languages.en]
+    contentDir = 'content/en'
+    languageName = 'english'
+    languageCode = 'en'
+    weight = 1
+    description = '<p>Follow Yuki and her friends in Horse Life 98, a comic of crazy adventures, silly hijinks and epic weirdness written and drawn by the one and only J. P. Savard.</p><p>Updates whenever, no schedule at the moment, follow those social networks to find out when a new episode is uploaded!</p>'
+    footer = '<br/><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>, unless otherwise indicated.'
+  [languages.fr]
+    contentDir = 'content/fr'
+    languageName = 'français'
+    languageCode = 'fr'
+    weight = 2
+    description = "<p>Suivez Yuki et ses amis dans Horse Life 98, un comic de folles aventures, d'idiotes niaiseries et d'épiques bizarreries écrits et dessinés par le seul et unique J. P. Savard.</p><p>Mis à jour éventuellement, pas de calendrier pour le moment, suivez les réseaux sociaux pour savoir quand un nouvel épisode est publié!</p>"
+    footer = '<br/><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br/>Cette œuvre est mise à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International</a>.'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[taxonomies]
+  season = 'seasons'
+  character = 'characters'
+  location = 'locations'
+  tag = 'tags'
