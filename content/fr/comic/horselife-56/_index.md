@@ -17,7 +17,7 @@ Yuki qu'est-ce que tu fais seule dans l'espace tu vas mourir
 
 oh attends
 
-Bonne St-Bernard-Legault tout le monde :)
+Joyeuse St-Bernard-Legault tout le monde :)
 
 Crédits:
 
