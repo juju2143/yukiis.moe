@@ -1,0 +1,192 @@
+@import url(//fonts.googleapis.com/earlyaccess/nicomoji.css);
+
+body
+{
+    background: #eee;
+    background-image: linear-gradient(0deg, #eee 0%, #df80ff 100%);
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+    color: black;
+    font-family: 'Noto Sans Display', sans-serif;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1,h2,h3,h4,h5,h6,nav,date,.pagination
+{
+    font-family: 'AnimeAce3BB', sans-serif;
+    font-weight: normal;
+    color: #df80ff;
+    font-size: 2em;
+}
+
+nav,date,.pagination
+{
+    font-size: 1.2em;
+}
+
+header, .comic, nav, .center, footer, .pagination
+{
+    text-align: center;
+}
+
+#head
+{
+    text-align: center;
+    vertical-align: middle;
+    padding: 4em 0;
+}
+
+#head h1, #head h2
+{
+    margin: 0;
+    line-height: 48pt;
+    /*font-family: 'Potta One', cursive;*/
+    color: #c000c0;
+}
+
+#head h1
+{
+    font-size: 64pt;
+}
+
+#head h2
+{
+    font-size: 38pt;
+}
+
+a
+{
+    color: #df80ff;
+}
+
+date
+{
+    color: #999;
+    font-size: 1.5em;
+}
+
+article, footer, nav a, .page-item a, aside
+{
+    background-color: rebeccapurple;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px #888888;
+    color: white;
+    padding: 8px;
+}
+
+article, footer
+{
+    margin: 8px 0;
+}
+
+article img, article video
+{
+    max-width: 100%;
+}
+
+nav, .pagination
+{
+    padding: 8px 0;
+    margin: 8px 0;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: #999;
+}
+
+nav a[href]
+{
+    color: white;
+}
+
+.listitem
+{
+    height: 32px;
+    vertical-align: middle;
+    background-size: 48px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    font-family: 'AnimeAce3BB', sans-serif;
+    font-size: 1.5em;
+    padding-left: 56px;
+}
+
+.listitem date
+{
+    font-size: 1em;
+    float: right;
+}
+
+.page-item
+{
+    display: inline;
+}
+
+#container
+{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: flex-start;
+}
+main
+{
+    flex-grow: 3;
+    width: 70%;
+}
+aside
+{
+    flex-grow: 1;
+    min-width: 350px;
+    width: 30%;
+}
+
+.meta ul
+{
+    font-size: 0.8em;
+    text-align: right;
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.socials
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.socials li
+{
+    display: inline-block;
+}
+
+.socials a
+{
+    padding: 10px;
+    background: #df80ff;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #636;
+}
+
+@media screen and (max-width: 960px) {
+    #container
+    {
+        flex-direction: column;
+        gap: 0;
+    }
+    main
+    {
+        width: 100%;
+    }
+    aside
+    {
+        width: 100%;
+    }
+}
