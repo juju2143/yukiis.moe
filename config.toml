@@ -1,7 +1,7 @@
 baseURL = 'https://yukiis.moe/'
 languageCode = 'en'
 title = 'horse life 98'
-copyright = 'Horse Life 98 © 2019-2021 J. P. Savard'
+copyright = 'Horse Life 98 © 2019-2021 J. P. Savard / <a href="https://a39.ca/">a39 studios</a>'
 theme = 'horselife98'
 paginate = 10
 
